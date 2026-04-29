@@ -11,7 +11,7 @@ export default function Stats() {
 	];
 
 	return (
-		<section className='bg-background px-6 py-24' id='about'>
+		<section className='px-6 py-24' id='about'>
 			<div className='mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2'>
 				<motion.div
 					initial={{ opacity: 0, scale: 0.95 }}

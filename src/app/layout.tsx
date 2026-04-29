@@ -21,8 +21,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='ru'>
-			<body className={`${geist.variable} font-sans antialiased`}>
-				{children}
+			<body className={`${geist.variable} antialiased relative min-h-screen`}>
+				<div
+					className='fixed inset-0 -z-20 bg-cover bg-center'
+					style={{ backgroundImage: "url('/background.avif')" }}
+				/>
+				<div className='fixed inset-0 -z-10 bg-black/80' />
+				<div className='relative z-0 min-h-screen'>{children}</div>
 			</body>
 		</html>
 	);
