@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'motion/react';
-import { Menu, ShoppingCart, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export default function Header() {
@@ -42,6 +42,12 @@ export default function Header() {
 					Почему мы
 				</a>
 				<a
+					href='#gallery'
+					className='text-sm text-gray-300 transition-colors hover:text-white'
+				>
+					Наши проекты
+				</a>
+				<a
 					href='#contacts'
 					className='text-sm text-gray-300 transition-colors hover:text-white'
 				>
@@ -50,12 +56,6 @@ export default function Header() {
 			</nav>
 
 			<div className='flex items-center gap-4 text-white'>
-				<div className='hidden items-center gap-2 md:flex'>
-					<span className='text-sm text-gray-400'>Москва</span>
-				</div>
-				<button className='relative rounded-md p-2 transition-colors hover:bg-white/5'>
-					<ShoppingCart className='h-5 w-5' />
-				</button>
 				<button
 					className='rounded-md p-2 transition-colors hover:bg-white/5 lg:hidden'
 					onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,15 +97,19 @@ export default function Header() {
 								Почему мы
 							</a>
 							<a
+								href='#gallery'
+								onClick={() => setIsMenuOpen(false)}
+								className='text-lg text-gray-300 transition-colors hover:text-white'
+							>
+								Наши проекты
+							</a>
+							<a
 								href='#contacts'
 								onClick={() => setIsMenuOpen(false)}
 								className='text-lg text-gray-300 transition-colors hover:text-white'
 							>
 								Контакты
 							</a>
-							<div className='flex items-center gap-2 border-t border-white/10 pt-4 text-gray-400'>
-								<span className='text-sm'>Москва</span>
-							</div>
 						</nav>
 					</motion.div>
 				)}
