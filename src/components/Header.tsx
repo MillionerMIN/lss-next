@@ -28,7 +28,7 @@ export default function Header() {
 					alt='LSS'
 					width='120'
 					height='auto'
-					className='h-8 w-auto'
+					className='h-10 w-auto'
 				/>
 			</div>
 
@@ -79,10 +79,10 @@ export default function Header() {
 						initial={{ opacity: 0, height: 0 }}
 						animate={{ opacity: 1, height: 'auto' }}
 						exit={{ opacity: 0, height: 0 }}
-						className={`absolute top-full right-0 left-0 z-40 overflow-hidden border-b border-white/10 transition-colors duration-300 lg:hidden ${
+						className={`absolute top-full right-0 left-0 z-40 overflow-hidden transition-colors duration-300 lg:hidden ${
 							isScrolled
-								? 'bg-[#0a0a0a]/50 backdrop-blur-md'
-								: 'bg-[#0a0a0a]/80 backdrop-blur-xl'
+								? 'bg-[#0a0a0a]/80 backdrop-blur-md'
+								: 'bg-[#0a0a0a]/50 backdrop-blur-md'
 						}`}
 					>
 						<nav className='flex flex-col gap-4 p-6'>

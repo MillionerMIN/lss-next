@@ -71,7 +71,7 @@ export default function Gallery() {
 							Наши проекты
 						</h2>
 						<p className='text-gray-400'>
-							Реализованные решения для современных офисов
+							Реализованные решения для наших клиентов
 						</p>
 					</motion.div>
 					<motion.button
