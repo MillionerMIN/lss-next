@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
 	images: {
 		unoptimized: true
 	},
-	basePath: '/MillionerMIN/lss-next',
+	basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
 	reactStrictMode: true
 	/* config options here */
 };

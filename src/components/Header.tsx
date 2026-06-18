@@ -23,9 +23,13 @@ export default function Header() {
 			}`}
 		>
 			<div className='flex items-center gap-2'>
-				<span className='text-2xl font-bold tracking-tight text-white'>
-					LSS
-				</span>
+				<img
+					src='/svg/logo-white.svg'
+					alt='LSS'
+					width='120'
+					height='auto'
+					className='h-8 w-auto'
+				/>
 			</div>
 
 			<nav className='hidden items-center gap-6 lg:flex'>
